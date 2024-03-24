@@ -7,6 +7,14 @@
   <b>This build features a few great fixes and customzations.</b>
   
   <br>
+  <br>
+  
+  ## 🌟 Update Highlights 03/24/24 🌟
+- **Detect Pwnagotchi [enabled](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg) in the WiFi Sniffers submenu (currently only for builds without GPS. Fix hopefully soon)**
+
+- **Added SD card fix** 
+
+- **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional** 
   
   ## SD portal fix
   <b> This fix is to relocate all the portals for evil portal to a folder on the sd card. When you install marauder on the CYD all the protals used in evil portal get stored on the root of the sd card. To me this is a nuisance as all the pcap and other files that are captured while sniffing get thrown on the root of the sd as well. I have gone through and adjusted the code so you may create a folder titled "portals" and store the html files there.<br>In the <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal</a> section are the files needed along with directions on usage. </b>

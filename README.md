@@ -3,9 +3,8 @@
 
 
 
-  <b>This repo will hold the flasher-tool to upload/flash a custom verion of <a href=hhttps://github.com/justcallmekoko/ESP32Marauder/wiki/about>Wifi Marauder</a> along with 3D files to print different cases for the CYD AKA Cheap Yellow Display</b>. 
-  <br>
-  <b>This build features a few great fixes and customzations.</b>
+  <b>This repo will hold the flasher-tool to upload/flash a custom verion of <a href=hhttps://github.com/justcallmekoko/ESP32Marauder/wiki/about>Wifi Marauder</a> along with 3D files to print different cases for the CYD AKA Cheap Yellow Display.This build features a few great fixes and customzations.</b> 
+  
   
   <br>
   <br>

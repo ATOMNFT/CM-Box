@@ -23,7 +23,8 @@
   <b>Use the flasher tool to flash the latest version of CM-Box to your CYD (Mico usb only)</b>
   
   
-  - **Visit:** [CM-Box] https://atomnft.github.io/CM-Box/flash0.html)
+  - **Visit:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
+  
   
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>

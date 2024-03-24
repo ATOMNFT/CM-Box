@@ -23,7 +23,7 @@
   <b>Use the flasher tool to flash the latest version of CM-Box to your CYD (Mico usb only)</b>
   
   <esp-web-install-button
-  manifest="manifest.json"
+  manifest="https://github.com/ATOMNFT/CM-Box/blob/main/Web-Tool/manifest.json"
 ></esp-web-install-button>
   
   

@@ -1,10 +1,10 @@
-![Header](pictures/mainheader.png)
+![Header](Images/mainheader.png)
 <br>
 
 
 
-  <b>A beautiful fork of wifi Maraduer, a suite of WiFi/Bluetooth offensive and defensive tools for the 2.8'' ESP32 Module ESP32-2432S028R WiFi+BT Dual-core 240X320 Smart Display.</b>
-  <b>This fork features a few great fixes and customzations.</b>
+  <b>This repo will hold the flasher-tool to upload/flash a custom verion of <a href=hhttps://github.com/justcallmekoko/ESP32Marauder/wiki/about>Wifi Marauder</a> along with 3D files to print different cases for the CYD AKA Cheap Yellow Display</b>
+  <b>This build features a few great fixes and customzations.</b>
   
   <br>
   
@@ -14,6 +14,7 @@
   
   
   ## To install this fork of marauder
+  <b>Use the flasher tool to flash the latest version of CM-Box to your CYD (Mico usb only)</b>
   
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>

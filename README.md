@@ -22,7 +22,7 @@
   ## To install this fork of marauder
   <b>Use the flasher tool to flash the latest version of CM-Box to your CYD (Mico usb only)</b>
   
-  - **Visit:** [CM-Box]https://github.com/ATOMNFT/CM-Box/blob/main/flash0.html)
+  - **Visit:** [CM-Box] https://atomnft.github.io/CM-Box/flash0.html)
   
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>

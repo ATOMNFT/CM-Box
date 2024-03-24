@@ -10,7 +10,7 @@
   <br>
   
   ## 🌟 Update Highlights 03/24/24 🌟
-- **Detect Pwnagotchi in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
+- **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
 
 - **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional**
 

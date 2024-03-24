@@ -22,6 +22,10 @@
   ## To install this fork of marauder
   <b>Use the flasher tool to flash the latest version of CM-Box to your CYD (Mico usb only)</b>
   
+  <esp-web-install-button
+  manifest="manifest.json"
+></esp-web-install-button>
+  
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>
   <b>Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for all your guidance and late night replies.</b>

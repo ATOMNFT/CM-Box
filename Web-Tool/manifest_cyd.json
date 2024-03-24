@@ -1,5 +1,5 @@
 {
-  "name": "CYD-Custom-Marauder",
+  "name": "CYD Custom Marauder",
   "builds": [
     {
       "chipFamily": "ESP32",

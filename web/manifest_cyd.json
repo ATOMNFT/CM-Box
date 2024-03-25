@@ -1,5 +1,5 @@
 {
-  "name": "CYM Web Flasher",
+  "name": "CM-Box Flasher",
   "builds": [
     {
       "chipFamily": "ESP32",

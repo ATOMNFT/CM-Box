@@ -26,6 +26,10 @@
   
   - **Simple Install:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
   - **Hands On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
+  <hr>
+  
+  ## 3D files
+  <b>Head over to the <a href=#>3D files</a> section to download the stl files need to print the CM-Box</b>
   
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>

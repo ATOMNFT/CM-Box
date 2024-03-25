@@ -31,6 +31,9 @@
   ## 3D files
   <b>Head over to the <a href=#>3D files</a> section to download the stl files need to print the CM-Box</b>
   
+  <br>
+  <hr>
+  
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>
   <b>Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for all your guidance and late night replies.</b>

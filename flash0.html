@@ -81,9 +81,15 @@
   </head>
   <body>
   
-    <esp-web-install-button
-  manifest="Web-Tool/manifest_cyd.json"
-></esp-web-install-button>
+     <script>
+      document.querySelectorAll('input[name="type"]').forEach(radio =>
+        radio.addEventListener("change", () => {
+          const button = document.querySelector('esp-web-install-button');
+          button.manifest = `web/manifest_${radio.value}.json`;
+          button.classList.remove('invisible');
+        }
+      ));
+    </script>
 
   </body>
 </html>

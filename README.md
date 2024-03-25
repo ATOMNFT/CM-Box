@@ -12,7 +12,7 @@
   ## 🌟 Update Highlights 03/24/24 🌟
 - **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
 
-- **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional**
+- **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional** (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
 
  - **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>SD card portal location fix </a>**
  
@@ -20,11 +20,11 @@
  
   
   ## To install this fork of marauder
-  <b>Use the flasher tool to flash the latest version of CM-Box to your CYD (Mico usb only)</b>
+  <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only) or you can choose to build from a modified fork for a more hands on experince. Both options result in the same installation the second option gives you the to modify the files further if your comfy with that.</b>
   
   
   - **Visit:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
-  
+  - **Visit:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
   
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>

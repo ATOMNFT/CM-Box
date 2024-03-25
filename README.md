@@ -14,7 +14,7 @@
 
 - **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional** (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
 
- - **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>SD card portal location fix </a>**
+- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>SD card portal location fix </a>** Fixed by me
  
 
  

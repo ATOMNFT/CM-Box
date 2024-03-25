@@ -14,8 +14,9 @@
 
 - **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional** (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
 
-- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>SD card portal location fix </a>** Fixed by me
- 
+- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage fix</a>** Fixed by me
+
+
 
  
   
@@ -23,8 +24,8 @@
   <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only at the moment) or you can choose to build from a modified fork (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b>
   
   
-  - **Visit:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
-  - **Visit:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
+  - **Simple Install:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
+  - **Hands On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
   
   
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>
@@ -36,10 +37,6 @@
   <br>
   
   
-  ## Fixes (These are included in this fork)
   
-  - `BLE swift pair fix` [BLE FIX](https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/BLE%20Swiftpair%20Fix)
-
- - `Evil Portal storage fix` [Evil Portal SD fix](https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff)
 
  

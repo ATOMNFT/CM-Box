@@ -20,7 +20,7 @@
  
   
   ## To install this fork of marauder
-  <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only) or you can choose to build from a modified fork for a more hands on experince. Both options result in the same installation the second option gives you the to modify the files further if your comfy with that.</b>
+  <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only at the moment) or you can choose to build from a modified fork (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b>
   
   
   - **Visit:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
@@ -43,10 +43,3 @@
  - `Looking for Evil Portal storage fix` [Evil Portal SD fix](https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff)
 
  
-
-
-
-
-  
-  
-  

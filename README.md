@@ -30,6 +30,7 @@
   
   ## 3D files
   <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box</b>
+  
   ![Front](Images/1front.jpg)
   
   <br>

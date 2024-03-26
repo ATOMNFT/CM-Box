@@ -31,8 +31,9 @@
 1. CYD aka Cheap Yellow Display. (Can be found <a href=https://shorturl.at/GJKY4>HERE</a>)
   
 ## Directions to build the CM-Box
- 1. <b>Download and print the stl files located in <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> folder. All files are ready to print. </b>
- 2. Process coming soon. (Pics are being taken of a new build for ref.)
+ 1. Download and print the stl files located in <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> folder. All files are ready to print.
+ 2. Consult parts list above^
+ 3. Process coming soon. (Pics are being taken of a new build for ref.)
   
  <hr>
   
@@ -50,9 +51,4 @@
   
   
   <br>
-  <br>
   
-  
-  
-
- 

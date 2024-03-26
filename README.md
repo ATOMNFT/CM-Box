@@ -9,18 +9,16 @@
   <br>
   <br>
   
-  ## 🌟 Update Highlights 03/24/24 🌟
+## 🌟 Update Highlights 03/24/24 🌟
 - **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
 
 - **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional** (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
 
 - **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage fix</a>** Fixed by me
 
+<hr>
 
-
- 
-  
-  ## To install this fork of marauder
+## To install this fork of marauder
  1. <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only at the moment). 
 <br> 
  2. Or you can choose to build from a modified fork (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b>
@@ -28,13 +26,17 @@
    - **Hands On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
   
  <hr>
+
+## Parts List
+1. CYD aka Cheap Yellow Display. (Can be found <a href=https://shorturl.at/GJKY4>HERE</a>)
   
-## Directions to build the CM-Box 
- 1. <b>Process coming soon</b>
+## Directions to build the CM-Box
+ 1. <b>Download and print the stl files located in <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> folder. All files are ready to print. </b>
+ 2. Process coming soon. (Pics are being taken of a new build for ref.)
   
  <hr>
   
-  ## 3D files
+## 3D files
   <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box</b>
   
   ![Front](Images/CMB1.jpg) ![Stand](Images/CMB2.jpg) ![Stand](Images/CMB3.jpg) ![Stand](Images/CMB4.jpg)

@@ -32,6 +32,7 @@
 2. 1 rocker switch (Can be found <a href=https://shorturl.at/oABL4>HERE</a>) 19mm x 13mm
 3. 1 Voltmeter (Can be found <a href=https://shorturl.at/djHY5>HERE</a>)
 4. 1 Lipo battery (Can be found <a href=https://rb.gy/8q9c45>HERE</a>)
+5. x4 M3x20mm hex head screws. (Can be found <a href=https://rb.gy/lb1ewo>HERE</a>)
   
 ## Directions to build the CM-Box
  1. Download and print the stl files located in <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> folder. All files are ready to print.

@@ -74,6 +74,41 @@
         margin-left: auto;
         margin-right: auto;
       }
+	  #socialIcons {
+	display: block;
+}
+#socialIcons ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#socialIcons ul li {
+	margin-right: 5px;
+	height: 35px;
+	line-height: 40px;
+	list-style-type: none;
+	display: inline-block;
+	background: rgba(224, 224, 224, 1);
+	border-radius: 47px;
+	padding: 5px;
+}
+#socialIcons ul li a {
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+}
+.twitterIcon, .facebookIcon, .linkedInIcon, .pintrestIcon {
+	background: url('../images/social-icons.png') -74px 0px;
+}
+.facebookIcon {
+	background-position: 10px 0px;
+}
+.linkedInIcon {
+	background-position: -245px 0px;
+}
+.pintrestIcon {
+	background-position: -331px 0px;
+}
       @media (prefers-color-scheme: dark) {
         body {
           background-color: #333;
@@ -108,6 +143,17 @@
         > &mdash;
         Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a> 🛠️
 	  </div>
+	  
+	  <!--/.container--> 
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="social text-center"> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-flickr"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
+    <div class="clear"></div>
+    <!--CLEAR FLOATS--> 
+  </div>
+</footer>
 	  
     <script>
       document.querySelectorAll('input[name="type"]').forEach(radio =>

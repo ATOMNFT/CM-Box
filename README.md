@@ -21,7 +21,9 @@
 ## To install this fork of marauder
  1. <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only at the moment). 
 <br> 
- 2. Or you can choose to build from a modified fork (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b>
+ 2. Or you can choose to build from a modified fork (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
+ 
+ <br>
  
    - **Simple Install:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a>
    - **Hands On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>

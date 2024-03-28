@@ -29,7 +29,7 @@
 
 <br>
  
- 2. <b>Or you can choose to build from a modified fork (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
+ 2. <b>Or you can choose to build from source (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
  
  <br>
  

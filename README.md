@@ -53,7 +53,7 @@
  <hr>
   
 ## 3D files
-  <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box. The files are olny for the 1 micro usb version at this time,/b>
+  <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box. The files are only for the 1 micro usb version at this time.</b>
   
   ![Front](Images/CMB1.jpg) ![Stand](Images/CMB2.jpg) ![Stand](Images/CMB3.jpg) ![Stand](Images/CMB4.jpg)
   <br>

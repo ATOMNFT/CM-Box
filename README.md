@@ -9,7 +9,7 @@
   <br>
   <br>
   
-## 🌟 Update Highlights 03/24/24 🌟
+## 🌟 Update Highlights 03/28/24 🌟
 - **Added <a href=https://github.com/ATOMNFT/CM-Box/tree/main/web>CYD2USB bin files</a> to the flasher tool.**
 - **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
 
@@ -53,7 +53,7 @@
  <hr>
   
 ## 3D files
-  <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box</b>
+  <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box. The files are olny for the 1 micro usb version at this time,/b>
   
   ![Front](Images/CMB1.jpg) ![Stand](Images/CMB2.jpg) ![Stand](Images/CMB3.jpg) ![Stand](Images/CMB4.jpg)
   <br>

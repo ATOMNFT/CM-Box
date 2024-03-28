@@ -1,5 +1,5 @@
 {
-  "name": "CM-Box Marauder 13.9",
+  "name": "CM-Box Marauder v0.13.9",
   "builds": [
     {
       "chipFamily": "ESP32",

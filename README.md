@@ -21,6 +21,11 @@
 
 ## To install this fork of marauder
  1. <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD (Micro usb only at the moment).</b>
+ <br>
+ <b>Consult the images below to verify which version of the CYD you have if you are unaware</b>
+
+![2USB](Images/back2usb.png) ![1MicroUSB](Images/back1usb.png)
+
 
 <br>
  

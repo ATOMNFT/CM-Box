@@ -7,7 +7,7 @@
       "parts": [
         { "path": "esp32_CMBOX2USB_marauder.ino.bootloader.bin", "offset": 4096 },
         { "path": "esp32_CMBOX2USB_marauder.ino.partitions.bin", "offset": 32768 },
-        { "path": "esp32_CMBOX2USB_marauder.ino", "offset": 65536 }
+        { "path": "esp32_CMBOX2USB_marauder.ino.bin", "offset": 65536 }
       ]
     },
     {

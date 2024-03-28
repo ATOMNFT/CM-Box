@@ -74,14 +74,22 @@
         margin-left: auto;
         margin-right: auto;
       }
-	  /* h6: set presentation of images */
-      .h6 {
-         font-family: "Franklin Gothic Demi", serif;
-         font-size: 1.0em;
-         font-weight: normal;
-         line-height: 1.25em;
-         text-align: center;
-        }
+	  .wrapper {
+        display: flex;
+        justify-content: center;
+      }
+	  .back1usb
+	   height: 25%;
+	   width: 30%;
+	   padding: 10px;
+	   text-align: center;
+	   }
+	   .back2usb
+	   height: 25%;
+	   width: 30%;
+	   padding: 10px;
+	   text-align: center;
+	   }
       @media (prefers-color-scheme: dark) {
         body {
           background-color: #333;
@@ -96,12 +104,11 @@
   </head>
   <body>
   
-  
-      <div id="wrapper">
-<figure>
 
-
-<h6><img alt="" src="Images/back1usb.png" width="50%"/> <img alt="small drawing" src="Images/back2usb.png" width="50%"/><br/>Differences</h6>
+     <div class="wrapper">
+      <img src="Images/back1usb.png" alt="1 Micro USB" id="back1usb">
+      <img src="Images/back2usb.png" alt="2 USBs" id="back2usb">
+     </div>
   
   
     <div class="content">

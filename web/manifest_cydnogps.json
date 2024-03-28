@@ -1,5 +1,5 @@
 {
-  "name": "CM-Box NOGPS Flasher",
+  "name": "CM-Box Marauder (NoGPS) 13.9",
   "builds": [
     {
       "chipFamily": "ESP32",

@@ -20,7 +20,7 @@
 <hr>
 
 ## To install this fork of marauder
- 1.<h3>Simple Install</h3> <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD.
+ - **Simple Install:** <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD.
  Please consult the images below to verify which version of the CYD you have if you are unaware. These images are also on the flasher tool page.</b>
 
 ![2USB](Images/back2usb.png) ![1MicroUSB](Images/back1usb.png)
@@ -28,7 +28,7 @@
 
 <br>
  
- 2.<h3>Hands-On Install</h3> <b>Or you can choose to build from source (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
+ 2.- **Hands-On Install:** <b>Or you can choose to build from source (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
  
  <br>
  

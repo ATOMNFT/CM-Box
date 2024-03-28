@@ -28,7 +28,7 @@
 
 <br>
  
- 2.- **Hands-On Install:** <b>Or you can choose to build from source (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
+ - **Hands-On Install:** <b>Or you can choose to build from source (CYD-ESP32Marauder) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
  
  <br>
  

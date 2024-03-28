@@ -1,5 +1,5 @@
 {
-  "name": "CM-Box Flasher",
+  "name": "CM-Box Marauder",
   "builds": [
     {
       "chipFamily": "ESP32",

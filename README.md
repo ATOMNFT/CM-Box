@@ -64,6 +64,9 @@
   <b>And thank you to <a href=https://github.com/smoochiee>smoochiee</a> for helping with the bootscreen and the badass tuts for building our own Marauder.</b><br>
   
   
+  A big thank you as well goes to the creators and supporters of the [ESP32 Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display) project and the community Discord, especially **@cod5fgzj**, [**ggaljoen**](https://github.com/ggaljoen). And of course JustCallMeKoko for the foundational work on ESP32 Marauder.
+  
+  
   <br>
   <br>
   

@@ -7,7 +7,7 @@
       "parts": [
         { "path": "esp32_CMBOX_NoGPS_marauder.ino.bootloader.bin", "offset": 4096 },
         { "path": "esp32_CMBOX_NoGPS_marauder.ino.partitions.bin", "offset": 32768 },
-        { "path": "esp32_CMBOX_NoGPS_marauder.ino", "offset": 65536 }
+        { "path": "esp32_CMBOX_NoGPS_marauder.ino.bin", "offset": 65536 }
       ]
     },
     {

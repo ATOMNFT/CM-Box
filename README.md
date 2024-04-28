@@ -34,7 +34,7 @@
  
  <br>
  
-   ![ESP32-FLASHER](https://github.com/ATOMNFT/CM-Box/blob/main/Images/esp-flash-icn.png "a title")  **Simple Install:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a> 
+   ![ESP32-FLASHER](https://github.com/ATOMNFT/CM-Box/blob/main/Images/esp-flash-icn.png "Simple Install")  **Simple Install:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a> 
    <br>
    <br>
    <br>

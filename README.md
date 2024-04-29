@@ -38,7 +38,7 @@
    <br>
    <br>
    <br>
-   - **Hands-On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
+   ![IDE-Build](https://github.com/ATOMNFT/CM-Box/blob/main/Images/ide-icn.png "Hands-On Install")  **Hands-On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>
   
  <hr>
 

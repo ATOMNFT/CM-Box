@@ -11,7 +11,7 @@
   
 ## 🌟 Update Highlights 04/26/24 🌟
 - **Wif-Fi Marauder updated to 13.10**
-- **RGB is now working for sniffing and attacks**
+- **RGB LED (on back of CYD) is now working for sniffing and attacks thanks to <a href=https://github.com/lsdlsd88>lsdlsd88</a> and <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>**
 - **Added <a href=https://github.com/ATOMNFT/CM-Box/tree/main/web>CYD2USB bin files</a> to the flasher tool.**
 - **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
 

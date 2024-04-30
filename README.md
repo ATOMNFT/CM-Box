@@ -44,10 +44,6 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
  
   - **Hands-On Install:** <b>Or you can choose to build from source (<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
 
-![2USB](Images/back2usb.png) ![1MicroUSB](Images/back1usb.png)
-
-
- 
  <br>
  
    ![ESP32-FLASHER](https://github.com/ATOMNFT/CM-Box/blob/main/Images/esp-flash-icn.png "Simple Install")  **Simple Install:** <a href=https://atomnft.github.io/CM-Box/flash0.html>CM-Box flasher tool</a> 
@@ -65,7 +61,7 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
 4. 1 Lipo battery (Can be found <a href=https://rb.gy/8q9c45>HERE</a>)
 5. x4 M3x20mm hex head screws. (Can be found <a href=https://rb.gy/lb1ewo>HERE</a>)
 
-- **GPS Functionality**: 🛰 GPS is [enabled](screenshots/gps5.jpg) and fully operational through the 4-pin connector located near the MicroUSB port of the CYD module. [Check here](https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification) for details on supported GPS hardware.
+- **GPS Functionality**: 🛰 GPS is enabled and fully operational through the 4-pin connector located near the MicroUSB port of the CYD module. [Check here](https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification) for details on supported GPS hardware.
 
 <hr>
   
@@ -87,7 +83,6 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
   <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>
   <b>Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for all your guidance and late night replies.</b>
   <b>And thank you to <a href=https://github.com/smoochiee>smoochiee</a> for helping with the bootscreen and the badass tuts for building our own Marauder.</b><br>
-  
   <b>A big thank you as well goes to the creators and supporters of the [ESP32 Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display) project and the community Discord, especially **@cod5fgzj**, [**ggaljoen**](https://github.com/ggaljoen). 
   <br> 
   And of course <a href=https://github.com/justcallmekoko>JustCallMeKoko</a>for the foundational work on ESP32 Marauder.</b>

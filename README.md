@@ -11,7 +11,7 @@
   
 <div align="center">
   
-  ## 🎩 Update Highlights 04/26/24 — Marauder v0.13.10 🎩
+  ## ⬆ Update Highlights 04/26/24 — Marauder v0.13.10 ⬆
 
 </div>
 

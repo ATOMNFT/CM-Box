@@ -45,7 +45,7 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
 
    <br>
  
-   ![ESP32-FLASHER]<a href="https://atomnft.github.io/CM-Box/flash0.html"><img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/esp-flash-icn.png" />CM-Box flasher tool</a>
+   <a href="https://atomnft.github.io/CM-Box/flash0.html"><img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/esp-flash-icn.png" />CM-Box flasher tool</a>
    <br>
    <br>
    ![IDE-Build](https://github.com/ATOMNFT/CM-Box/blob/main/Images/ide-icn.png "Hands-On Install")  **Hands-On Install:** <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>

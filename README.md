@@ -28,11 +28,11 @@
 
 <hr>
 
-## Compatibility
+## Device Compatibility
 
-Successfully tested on both of these available on Amazon:
-- [Module 1](https://amazon.com/dp/B0BVFXR313)
-- [Module 2](https://amazon.com/dp/B0CLR7MQ91)
+Successfully tested on both of these devices:
+- [CYD variant 1](https://amazon.com/dp/B0BVFXR313)
+- [CYD variant 2](https://amazon.com/dp/B0CLR7MQ91)
 
 No hardware modifications required thanks to integration with **@ggaljoen's** [TFT_eSPI](https://github.com/ggaljoen/TFT_eSPI) fork.
 

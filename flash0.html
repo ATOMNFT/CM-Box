@@ -15,60 +15,128 @@
 
     
     <style>
+	
       body {
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Ubuntu, sans-serif;
-        padding: 0;
-        margin: 0;
-        line-height: 1.4;
-      }
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+	}
+	
+	  fieldset {
+	margin: 20px;
+	padding: 14px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	border: none;
+	}
+	
+	legend {
+    
+	font-size: 28px;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(2px);
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	}
+	
+    input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: transparent;
+	position: relative;
+	top: 2px;
+	}
+	
+	input[type="radio"]:checked::before {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: #FF1493;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: appear 0.8s;
+	}
+	
+	label {
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	}
+	
+	div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	}
+	
+	@keyframes appear {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+		background-color: #fff;
+	}
+	45% {
+		transform: translate(-50%, -50%) scale(1.6);
+		background-color: #64aedf;
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1.7);
+		background-color: #ad97b3;
+	}
+	55% {
+		transform: translate(-50%, -50%) scale(1.6);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+		background-color: #ca8489;
+	}
+	}
+
       .content {
         max-width: 600px;
         margin: 0 auto;
         padding: 12px;
       }
-      h2 {
-        margin-top: 2em;
-      }
-      h3 {
-        margin-top: 1.5em;
-      }
+	  
       a {
         color: #03a9f4;
       }
+	  
       .invisible {
         visibility: hidden;
       }
+	  
       .hidden {
         display: none;
       }
+	  
       esp-web-install-button[install-unsupported] {
         visibility: inherit;
       }
-      .content pre {
-        max-width: 100%;
-        overflow-y: scroll;
-      }
+      
       .footer {
-        margin-top: 24px;
-        border-top: 1px solid #ccc;
-        padding-top: 24px;
-        text-align: center;
-      }
-      .footer .initiative {
-        font-style: italic;
-        margin-top: 16px;
-      }
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 8px;
-        border-bottom: 1px solid #ccc;
-      }
-      .radios li {
-        list-style: none;
-        line-height: 2em;
+	    margin-bottom: 10px;
+        margin-top: 8px;
+        border-top: 2px solid #FF1493;
+        padding-top: 20px;
+		display: flex;
+        justify-content: center;
+        
       }
 	  .logo {
         max-width: 400px;
@@ -103,45 +171,45 @@
       }
     </style>
     <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
-  </head>
-  <body>
-  
+    </head>
+    <body>
      <div class="wrapper">
       <img src="Images/back1usb.png" alt="1 Micro USB" id="back1usb">
       <img src="Images/back2usb.png" alt="2 USB" id="back2usb">
      </div>
       <center>
-    <div class="content">
-      <p>Choose your hardware and connect your CYD</p>
-      <ul class="radios">
-        <li>
-          <label><input type="radio" name="type" value="cyd" /> CYD Micro-USB only</label>
-        </li>
-		<li>
-          <label><input type="radio" name="type" value="cydnogps" /> CYD Micro-USB only (No GPS)</label>
-        </li>
-		<li>
-          <label><input type="radio" name="type" value="cyd2usb" /> CYD with 2 USB</label>
-        </li>
-		<li>
-          <label><input type="radio" name="type" value="cyd2usb-nogps" /> CYD with 2 USB (No GPS)</label>
-        </li>
-      </ul>
-      <p class="button-row" align="center">
+	  
+	  <p>
+	  This tool is used to flash ESP32-Marauder to a CYD (AKA-Cheap Yellow Display). <br>
+	  The (NoGPS) versions have working "detect pwnagotchi" in wifi sniffing menu. <br>
+	  A fix is being worked on to allow gps to be enabled while still retaining detect pwnagotchi.
+	  </p>
+	  
+	  <fieldset>
+	<legend>Choose Your Device:</legend>
+
+	<div>
+		<label><input type="radio" name="type" value="cyd" /> CYD Micro-USB only</label>
+	</div>
+
+	<div>
+		<label><input type="radio" name="type" value="cydnogps" /> CYD Micro-USB only (No GPS)</label>
+	</div>
+
+	<div>
+		<label><input type="radio" name="type" value="cyd2usb" /> CYD with 2 USB</label>
+	</div>
+	
+	<div>
+		<label><input type="radio" name="type" value="cyd2usb-nogps" /> CYD with 2 USB (No GPS)</label>
+	</div>
+      </fieldset>
+	  
+	  <p class="button-row" align="center">
         <esp-web-install-button class="invisible"></esp-web-install-button>
-      </p>
+       </p>  
       </center>
-      <div class="footer">
-        ✨ <a href="https://github.com/ATOMNFT/CM-Box"
-          >CM-Box</a
-        > &mdash;
-        Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a> 🛠️
-		
-		<br>
-		
-		
-		
-    </div>
+        
     <script>
       document.querySelectorAll('input[name="type"]').forEach(radio =>
         radio.addEventListener("change", () => {
@@ -152,4 +220,14 @@
       ));
     </script>
   </body>
+  
+  
+        <div class="footer">
+        ✨ <a href="https://github.com/ATOMNFT/CM-Box"
+          >CM-Box</a
+        > &mdash;
+        Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a> 🛠️
+		</div>
+  
+  
 </html>

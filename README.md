@@ -58,7 +58,7 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
    <br>
    <a href="https://github.com/ATOMNFT/CYD-ESP32Marauder"><img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/ide-icn.png" />Arduino Sketch Files</a>
   
- <hr>
+<hr>
 
 ## Parts List
 1. CYD aka Cheap Yellow Display. (Can be found <a href=https://shorturl.at/GJKY4>HERE</a>)

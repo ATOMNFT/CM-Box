@@ -17,15 +17,24 @@
 
 - **RGB LED enabled for builds w/o GPS thanks to [**lsdlsd88**](https://github.com/lsdlsd88)**
 
-- **Detect Pwnagotchi [enabled](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg) in the WiFi Sniffers submenu. (currently only for builds without GPS. Fix hopefully soon)**
+- **Detect Pwnagotchi [enabled](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg) in the WiFi Sniffers submenu. (currently for builds without GPS. Fix hopefully soon)**
     
 - **SwiftPair Spam now 100% functional** — Samsung, Google, and BLE spam crashing should now be nonexistent.
 
-- **For Evil Portal examples, click [here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/Evil%20Portal/).**
+- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage adjustment</a>** — adjusted by me.
 
 - **For info on adding an external antenna, click [here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/AntennaMod.md).**
 
-- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage fix</a>** Fixed by me
+
+<hr>
+
+## Compatibility
+
+Successfully tested on both of these available on Amazon:
+- [Module 1](https://amazon.com/dp/B0BVFXR313)
+- [Module 2](https://amazon.com/dp/B0CLR7MQ91)
+
+No hardware modifications required thanks to integration with **@ggaljoen's** [TFT_eSPI](https://github.com/ggaljoen/TFT_eSPI) fork.
 
 <hr>
 

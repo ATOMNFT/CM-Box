@@ -9,13 +9,21 @@
   <br>
   <br>
   
-## 🌟 Update Highlights 04/26/24 🌟
-- **Wif-Fi Marauder updated to 13.10**
-- **RGB LED (on back of CYD) is now working for sniffing and attacks thanks to <a href=https://github.com/lsdlsd88>lsdlsd88</a> and <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>**
-- **Added <a href=https://github.com/ATOMNFT/CM-Box/tree/main/web>CYD2USB bin files</a> to the flasher tool.**
-- **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
+<div align="center">
+  
+  ## 🎩 Update Highlights 04/26/24 — Marauder v0.13.10 🎩
 
-- **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional in 13.10** (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
+</div>
+
+- **RGB LED enabled for builds w/o GPS thanks to [**lsdlsd88**](https://github.com/lsdlsd88)**
+
+- **Detect Pwnagotchi [enabled](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg) in the WiFi Sniffers submenu for builds without GPS**
+    
+- **SwiftPair Spam now 100% functional** — Samsung, Google, and BLE spam crashing should now be nonexistent.
+
+- **For Evil Portal examples, click [here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/Evil%20Portal/).**
+
+- **For info on adding an external antenna, click [here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/AntennaMod.md).**
 
 - **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage fix</a>** Fixed by me
 

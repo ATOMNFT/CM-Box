@@ -59,7 +59,7 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
 4. 1 Lipo battery (Can be found <a href=https://rb.gy/8q9c45>HERE</a>)
 5. x4 M3x20mm hex head screws. (Can be found <a href=https://rb.gy/lb1ewo>HERE</a>)
 
-- **GPS Functionality**: 🛰 GPS is enabled and fully operational through the 4-pin connector located near the MicroUSB port of the CYD module. [Check here](https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification) for details on supported GPS hardware.
+- **GPS Functionality**: 🛰 GPS is enabled on builds not labled (NoGPS) and is fully operational through the 4-pin connector located near the MicroUSB port of the CYD module. [Check here](https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification) for details on supported GPS hardware.
 
 <hr>
   

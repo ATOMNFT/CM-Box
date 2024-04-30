@@ -9,25 +9,15 @@
   <br>
   <br>
   
-  <div align="center">
-  
-  ## 🌟 Update Highlights 04/26/24  — Marauder v0.13.10 🌟
-
-</div>
-  - **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage tweak</a>** Tweaked by me
+## 🌟 Update Highlights 04/26/24 🌟
+- **Wif-Fi Marauder updated to 13.10**
 - **RGB LED (on back of CYD) is now working for sniffing and attacks thanks to <a href=https://github.com/lsdlsd88>lsdlsd88</a> and <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>**
-- **Detect Pwnagotchi [enabled](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg) in the WiFi Sniffers submenu (currently only for builds without GPS. Fix hopefully soon)**
 - **Added <a href=https://github.com/ATOMNFT/CM-Box/tree/main/web>CYD2USB bin files</a> to the flasher tool.**
-- **SwiftPair Spam now 100% functional** — Samsung, Google, and BLE spam crashing should now be nonexistent.
-- **For info on adding an external antenna, click [here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/AntennaMod.md).**
+- **<a href=https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg>Detect Pwnagotchi fix </a> in the WiFi Sniffers submenu thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for sharing your knowledge on this topic. (currently only for builds without GPS. Fix hopefully soon)**
 
-<hr>
+- **Unrelated to the 0.13.9 release: SwiftPair Spam now 100% functional in 13.10** (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
 
-## Device Compatibility
-Successfully tested on both of these:
-- [Module 1](https://amazon.com/dp/B0BVFXR313)
-- [Module 2](https://amazon.com/dp/B0CLR7MQ91)
-No hardware modifications required thanks to integration with **@ggaljoen's** [TFT_eSPI](https://github.com/ggaljoen/TFT_eSPI) fork.
+- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage fix</a>** Fixed by me
 
 <hr>
 
@@ -35,7 +25,7 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
  - **Simple Install:** <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD.
  Please consult the images below to verify which version of the CYD you have if you are unaware. These images are also on the flasher tool page.</b>
  
- - **Hands-On Install:** <b>Or you can choose to build from source (<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
+  - **Hands-On Install:** <b>Or you can choose to build from source (<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
 
 ![2USB](Images/back2usb.png) ![1MicroUSB](Images/back1usb.png)
 

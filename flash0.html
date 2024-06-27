@@ -180,21 +180,37 @@
 	<legend>Choose Your Device:</legend>
 
 	<div>
-		<label><input type="radio" name="type" value="cyd" /> CYD Micro-USB only</label>
+		<label><input type="radio" name="13.10" value="cyd" /> CYD Micro-USB only</label>
 	</div>
 
 	<div>
-		<label><input type="radio" name="type" value="cydnogps" /> CYD Micro-USB only (No GPS)</label>
+		<label><input type="radio" name="13.10" value="cydnogps" /> CYD Micro-USB only (No GPS)</label>
 	</div>
 
 	<div>
-		<label><input type="radio" name="type" value="cyd2usb" /> CYD with 2 USB</label>
+		<label><input type="radio" name="13.10" value="cyd2usb" /> CYD with 2 USB</label>
 	</div>
 	
 	<div>
-		<label><input type="radio" name="type" value="cyd2usb-nogps" /> CYD with 2 USB (No GPS)</label>
+		<label><input type="radio" name="13.10" value="cyd2usb-nogps" /> CYD with 2 USB (No GPS)</label>
 	</div>
       </fieldset>
+	  
+	  <fieldset>
+            <legend>Choose Your File:</legend>
+            <div>
+                <label><input type="radio" name="1.0.0" value="file1" /> File 1</label>
+            </div>
+            <div>
+                <label><input type="radio" name="1.0.0" value="file2" /> File 2</label>
+            </div>
+            <div>
+                <label><input type="radio" name="1.0.0" value="file3" /> File 3</label>
+            </div>
+            <div>
+                <label><input type="radio" name="1.0.0" value="file4" /> File 4</label>
+            </div>
+        </fieldset>
 	  
 	  <p class="button-row" align="center">
         <esp-web-install-button class="invisible"></esp-web-install-button>
@@ -202,15 +218,23 @@
       </center>
         
     <script>
-      document.querySelectorAll('input[name="type"]').forEach(radio =>
+      document.querySelectorAll('input[name="13.10"]').forEach(radio =>
         radio.addEventListener("change", () => {
           const button = document.querySelector('esp-web-install-button');
           button.manifest = `web/manifest_${radio.value}.json`;
           button.classList.remove('invisible');
         }
       ));
+    
+	  document.querySelectorAll('input[name="1.0.0"]').forEach(radio =>
+            radio.addEventListener("change", () => {
+                const button = document.querySelector('esp-web-install-button');
+                button.manifest = `web/manifest_${radio.value}.json`;
+                button.classList.remove('invisible');
+            }
+        ));
     </script>
-  </body>
+</body>
   
   
         <div class="footer">

@@ -1,247 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  
+<head>
   <meta charset="utf-8" />
-    <title>CYD ESP32Marauder installer</title>
-    <img src="Images/flashlogo.png" alt="Logo" class="logo">   
-    <meta
-      name="description"
-      content="Easily allows users to install the ESP32-Marauder firmware on the Cheap-Yellow-Display."
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="color-scheme" content="dark light" />
-  
-
-    
-    <style>
-	
+  <title>CYD ESP32Marauder Installer</title>
+  <img src="Images/flashlogo.png" alt="Logo" class="logo">
+  <meta name="description" content="Easily allows users to install the ESP32-Marauder firmware on the Cheap-Yellow-Display." />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="color-scheme" content="dark light" />
+  <style>
+    body {
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+      padding: 0;
+      margin: 0;
+      line-height: 1.4;
+    }
+    fieldset {
+      margin: 20px;
+      padding: 14px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      border: none;
+    }
+    legend {
+      font-size: 28px;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(2px);
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .invisible {
+      visibility: hidden;
+    }
+    .hidden {
+      display: none;
+    }
+    esp-web-install-button[install-unsupported] {
+      visibility: inherit;
+    }
+    .logo {
+      max-width: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer {
+      color: #FFF;
+      margin-bottom: 0px;
+      margin-top: 8em;
+      border-top: 2px solid #FF1493;
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    @media (prefers-color-scheme: dark) {
       body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Ubuntu, sans-serif;
-    padding: 0;
-    margin: 0;
-    line-height: 1.4;
-	}
-	
-	  fieldset {
-	margin: 20px;
-	padding: 14px;
-	border-radius: 20px;
-	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-	display: inline-block;
-	border: none;
-	}
-	
-	  legend {
-	font-size: 28px;
-	font-weight: bold;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(2px);
-	border-radius: 20px;
-	padding: 10px 20px;
-	color: white;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-	}
-	
-      input[type="radio"] {
-	appearance: none;
-	-webkit-appearance: none;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #FF1493;
-	border-radius: 50%;
-	margin-right: 10px;
-	background-color: transparent;
-	position: relative;
-	top: 2px;
-	}
-	
-	  input[type="radio"]:checked::before {
-	content: "";
-	display: block;
-	width: 12px;
-	height: 12px;
-	background-color: #00FFFF;
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	animation: appear 0.8s;
-	}
-	
-	  label {
-	font-size: 20px;
-	font-weight: bold;
-	color: #fff;
-	}
-	
-	  div {
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
-	}
-	
-	@keyframes appear {
-	0% {
-		transform: translate(-50%, -50%) scale(0);
-		background-color: #fff;
-	}
-	45% {
-		transform: translate(-50%, -50%) scale(1.6);
-		background-color: #64aedf;
-	}
-	50% {
-		transform: translate(-50%, -50%) scale(1.7);
-		background-color: #ad97b3;
-	}
-	55% {
-		transform: translate(-50%, -50%) scale(1.6);
-	}
-	100% {
-		transform: translate(-50%, -50%) scale(1);
-		background-color: #ca8489;
-	}
-	}
+        background-color: #333;
+        color: #fff;
+      }
+      a {
+        color: #00FFFF;
+      }
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
+</head>
+<body>
+  <center>
+    <p class="wrapper" align="center">
+      This utility is designed to flash the ESP32-Marauder onto a CYD (Cheap Yellow Display). <br> In the current (NoGPS) versions, the feature to detect Pwnagotchi within the WiFi sniffing menu is operational. <br> Efforts are underway to enhance this functionality, allowing GPS to be activated while maintaining the ability to detect Pwnagotchi.
+    </p>
+    <fieldset>
+      <legend>13.10 Marauder-Choose Your Device:</legend>
+      <select id="select-13.10">
+        <option value="" selected disabled>Choose a device</option>
+        <option value="cyd">13.10 CYD Micro-USB only</option>
+        <option value="cydnogps">13.10 CYD Micro-USB only (No GPS)</option>
+        <option value="cyd2usb">13.10 CYD with 2 USB</option>
+        <option value="cyd2usb-nogps">13.10 CYD with 2 USB (No GPS)</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>1.0.0 Marauder-Choose Your Device:</legend>
+      <select id="select-1.0.0">
+        <option value="" selected disabled>Choose a device</option>
+        <option value="cydnogps_1.0.0">1.0.0 CYD Micro-USB only (No GPS)</option>
+        <option value="cyd2usb-nogps_1.0.0">1.0.0 CYD with 2 USB (No GPS)</option>
+        <option value="manifest_cyd-gps_1.0.0" /> 1.0.0 CYD Micro-USB only (With GPS)</option>
+        <option value="manifest_cyd2usb-gps_1.0.0" /> 1.0.0 CYD with 2 USB (With GPS)</option>
+      </select>
+    </fieldset>
+    <p class="button-row" align="center">
+      <esp-web-install-button class="invisible"></esp-web-install-button>
+    </p>
+  </center>
+  <script>
+    document.getElementById('select-13.10').addEventListener('change', (event) => {
+      const button = document.querySelector('esp-web-install-button');
+      button.manifest = `web/manifest_${event.target.value}.json`;
+      button.classList.remove('invisible');
+    });
 
-      .invisible {
-        visibility: hidden;
-      }
-	  
-      .hidden {
-        display: none;
-      }
-	  
-      esp-web-install-button[install-unsupported] {
-        visibility: inherit;
-      }
-	  
-	  .logo {
-        max-width: 400px;
-		display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      .footer {
-	    color: #FFF;
-	    margin-bottom: 0px;
-        margin-top: 8em;
-        border-top: 2px solid #FF1493;
-        padding-top: 30px;
-		display: flex;
-        justify-content: center;
-        
-      }
-	  
-	  .wrapper {
-        display: flex;
-        justify-content: center;
-      }
-	  
-	  .back1usb
-	   height: 18%;
-	   width: 20%;
-	   padding: 10px;
-	   text-align: center;
-	   }
-	   
-	   .back2usb
-	   height: 18%;
-	   width: 20%;
-	   padding: 10px;
-	   text-align: center;
-	   }
-	   
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #333;
-          color: #fff;
-        }
-        a {
-          color: #00FFFF;
-        }
-      }
-    </style>
-	
-    <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
-    </head>
-    <body>
-     
-      <center>
-	  
-	  <p class=wrapper align="center">
-	  This utility is designed to flash the ESP32-Marauder onto a CYD (Cheap Yellow Display). <br> In the current (NoGPS) versions, the feature to detect Pwnagotchi within the WiFi sniffing menu is operational. <br> Efforts are underway to enhance this functionality, allowing GPS to be activated while maintaining the ability to detect Pwnagotchi.
-	  </p>
-	  
-	  <fieldset>
-	<legend>13.10 Marauder-Choose Your Device:</legend>
+    document.getElementById('select-1.0.0').addEventListener('change', (event) => {
+      const button = document.querySelector('esp-web-install-button');
+      button.manifest = `web/manifest_${event.target.value}.json`;
+      button.classList.remove('invisible');
+    });
 
-	<div>
-		<label><input type="radio" name="13.10" value="cyd" /> 13.10 CYD Micro-USB only</label>
-	</div>
-
-	<div>
-		<label><input type="radio" name="13.10" value="cydnogps" /> 13.10 CYD Micro-USB only (No GPS)</label>
-	</div>
-
-	<div>
-		<label><input type="radio" name="13.10" value="cyd2usb" /> 13.10 CYD with 2 USB</label>
-	</div>
-	
-	<div>
-		<label><input type="radio" name="13.10" value="cyd2usb-nogps" /> 13.10 CYD with 2 USB (No GPS)</label>
-	</div>
-      </fieldset>
-	  
-	  <fieldset>
-            <legend>1.0.0 Marauder-Choose Your Device:</legend>
-            <div>
-                <label><input type="radio" name="1.0.0" value="cydnogps_1.0.0" /> 1.0.0 CYD Micro-USB only (No GPS) </label>
-            </div>
-            <div>
-                <label><input type="radio" name="1.0.0" value="cyd2usb-nogps_1.0.0" /> 1.0.0 CYD with 2 USB (No GPS)</label>
-            </div>
-            <div>
-                <label><input type="radio" name="1.0.0" value="manifest_cyd-gps_1.0.0" /> 1.0.0 CYD Micro-USB only (With GPS)</label>
-            </div>
-            <div>
-                <label><input type="radio" name="1.0.0" value="manifest_cyd2usb-gps_1.0.0" /> 1.0.0 CYD with 2 USB (With GPS)</label>
-            </div>
-        </fieldset>
-	  
-	  <p class="button-row" align="center">
-        <esp-web-install-button class="invisible"></esp-web-install-button>
-       </p>  
-      </center>
-        
-    <script>
-      document.querySelectorAll('input[name="13.10"]').forEach(radio =>
-        radio.addEventListener("change", () => {
-          const button = document.querySelector('esp-web-install-button');
-          button.manifest = `web/manifest_${radio.value}.json`;
-          button.classList.remove('invisible');
-        }
-      ));
-    
-	  document.querySelectorAll('input[name="1.0.0"]').forEach(radio =>
-            radio.addEventListener("change", () => {
-                const button = document.querySelector('esp-web-install-button');
-                button.manifest = `web/manifest_${radio.value}.json`;
-                button.classList.remove('invisible');
-            }
-        ));
-    </script>
+    // Visitor counter
+    window.addEventListener('DOMContentLoaded', (event) => {
+      if (localStorage.getItem('page_view_count')) {
+        localStorage.setItem('page_view_count', Number(localStorage.getItem('page_view_count')) + 1);
+      } else {
+        localStorage.setItem('page_view_count', 1);
+      }
+      document.getElementById('visitor-counter').innerText = `Visitor count: ${localStorage.getItem('page_view_count')}`;
+    });
+  </script>
+  <div class="footer">
+    ✨ <a href="https://github.com/ATOMNFT/CM-Box" style="color:#00FFFF;">CM-Box</a> &mdash;
+    Installer powered by &mdash; <a href="https://esphome.github.io/esp-web-tools/" style="color:#00FFFF;"> ESP Web Tools</a> 🛠️
+    <p id="visitor-counter"></p>
+  </div>
 </body>
-  
-  
-        <div class="footer">
-        ✨ <a href="https://github.com/ATOMNFT/CM-Box" style="color:#00FFFF;">CM-Box</a> 
-		&mdash;
-        Installer powered by &mdash;  <a href="https://esphome.github.io/esp-web-tools/" style="color:#00FFFF;"> ESP Web Tools</a> 🛠️
-		</div>
-  
-  
 </html>

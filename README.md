@@ -75,6 +75,9 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
  1. Download and print the stl files located in <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> folder. All files are ready to print.
  2. Consult parts list above^
  3. Process coming soon. (Pics are being taken of a new build for ref.)
+ 
+ ## SD Setup for CM-Box
+If you flashed from the <a href=https://atomnft.github.io/CM-Box/flash0.html>Custom Marauder Flasher tool for CYD</a> or built from <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a> then You must create a folder on the root of your sd card titled "portals". This is where you will store the html files along with the index.html file.
   
  <hr>
   

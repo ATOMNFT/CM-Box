@@ -100,7 +100,8 @@ If you flashed from the <a href=https://atomnft.github.io/CM-Box/flash0.html>Cus
   <br>
   <br>
   
-  
-  
+  <p align="center">
+  <img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg">
+  </p>
 
  

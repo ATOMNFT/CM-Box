@@ -1,6 +1,12 @@
 ![Header](Images/cmheader.png)
 <br>
 
+<p align="center">
+  <img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg">
+  </p>
+  
+  ---
+
 
 
   <b>This repo will hold the flasher-tool to upload/flash a custom verion of <a href=hhttps://github.com/justcallmekoko/ESP32Marauder/wiki/about>Wifi Marauder</a> along with 3D files to print different cases for the CYD AKA Cheap Yellow Display. This build features a few great fixes and customzations.</b> 
@@ -100,8 +106,3 @@ If you flashed from the <a href=https://atomnft.github.io/CM-Box/flash0.html>Cus
   <br>
   <br>
   
-  <p align="center">
-  <img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg">
-  </p>
-
- 

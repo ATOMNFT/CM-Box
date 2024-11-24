@@ -7,25 +7,22 @@
   
   ---
 
-
-
   <b>This repo will hold the flasher-tool to upload/flash a custom verion of <a href=hhttps://github.com/justcallmekoko/ESP32Marauder/wiki/about>Wifi Marauder</a> along with 3D files to print different cases for the CYD AKA Cheap Yellow Display. This build features a few great fixes and customzations.</b> 
-  
   
   <br>
   <br>
   
 <div align="center">
   
-  ## ⬆ Update Highlights 06/27/24 — Marauder v1.0.0 added ⬆
+  ## ⬆ Update Highlights 11/23/24 — Marauder v1.1.0 added ⬆
 
 </div>
 
-- **RGB LED enabled for builds w/o GPS thanks to [**lsdlsd88**](https://github.com/lsdlsd88)**
+- **RGB LED enabled thanks to [**lsdlsd88**](https://github.com/lsdlsd88)**
 
-- **Detect Pwnagotchi [enabled](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/screenshots/pwn2.jpg) in the WiFi Sniffers submenu. (currently for builds without GPS. Fix hopefully soon)**
+- **Detect Pwnagotchi 100% functional**
     
-- **SwiftPair Spam now 100% functional** — Samsung, Google, and BLE spam crashing should now be nonexistent.
+- **BLE/SwiftPair Spam now 100% functional**
 
 - **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage adjustment</a>** — Moves all portals into a folder instead of root of sd card.
 
@@ -34,7 +31,7 @@
 
 <hr>
 
-## GPS Functionality
+## 📡 GPS Functionality 📡
 
 - **🛰 GPS is enabled on builds not labeled (NoGPS) in the flasher tool and it is fully operational through the 4-pin connector located near the MicroUSB port of the CYD module.**
 <br>

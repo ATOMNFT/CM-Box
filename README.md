@@ -113,8 +113,9 @@
 > 
 > ---
 > 
-> ## 🎉 **Shoutouts!** 📢  
-> 
+
+## 🎉 **Shoutouts!** 📢  
+ 
 > A huge thank you goes to two wonderful people who made learning and building this possible:  
 > 
 > - **[Fr4nkFletcher](https://github.com/Fr4nkFletcher)** for all your guidance and late-night replies.  

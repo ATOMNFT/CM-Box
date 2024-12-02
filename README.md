@@ -116,17 +116,16 @@
 
 ## 🎉 **Shoutouts!** 📢  
  
-> A huge thank you goes to two wonderful people who made learning and building this possible:  
-> 
-> - **[Fr4nkFletcher](https://github.com/Fr4nkFletcher)** for all your guidance and late-night replies.  
-> - **[Smoochiee](https://github.com/smoochiee)** for helping with the bootscreen and the badass tutorials for building Marauder.  
-> 
-> Special thanks to the creators and supporters of the [ESP32 Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display) project and the community Discord, especially **@cod5fgzj** and [**ggaljoen**](https://github.com/ggaljoen).  
-> 
-> And of course, **[JustCallMeKoko](https://github.com/justcallmekoko)** for the foundational work on ESP32 Marauder.  
+ A huge thank you goes to two wonderful people who made learning and building this possible:  
+ 
+ - **[Fr4nkFletcher](https://github.com/Fr4nkFletcher)** for all your guidance and late-night replies.  
+ - **[Smoochiee](https://github.com/smoochiee)** for helping with the bootscreen and the badass tutorials for building Marauder.  
+ 
+ Special thanks to the creators and supporters of the [ESP32 Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display) project and the community Discord, especially **@cod5fgzj** and [**ggaljoen**](https://github.com/ggaljoen).  
+ 
+ And of course, **[JustCallMeKoko](https://github.com/justcallmekoko)** for the foundational work on ESP32 Marauder.  
 
   
-  
-  <br>
-  <br>
+<br>
+<br>
   

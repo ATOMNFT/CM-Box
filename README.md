@@ -14,40 +14,45 @@
   
 
   
-  ## ⬆ Update Highlights 11/23/24 — Marauder v1.1.0 added ⬆
+  ## ⬆ Update Highlights 11/23/24 ⬆ <br> Added New v1.1.0!
   
-- Added logging to SD for Flipper/AirTag sniff (Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a>)
-- Added Pcap capture of flipper data (WIP as the pcap is malformed)
-- Added Flipper Zero Sniff
-- Airtag Sniffing/Spoofing 
-- Working Pwnagotchi Detect on all models
-- Flipper BLE Spam
-- Wardriving Menu added
+  | Feature/Update                             | Description/Notes                                                                                                                                                        |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| • Added logging to SD for Flipper/AirTag sniff | Thanks to Fr4nkFletcher                                                                                                                                               |
+| • Added Pcap capture of flipper data       | WIP as the pcap is malformed                                                                                                                                            |
+| • Added Flipper Zero Sniff                 |                                                                                                                                                                        |
+| • Airtag Sniffing/Spoofing                 |                                                                                                                                                                        |
+| • Working Pwnagotchi Detect on all models  |                                                                                                                                                                        |
+| • Flipper BLE Spam                         |                                                                                                                                                                        |
+| • Wardriving Menu added                    |                                                                                                                                                                        |
+| • RGB LED enabled                          | Thanks to lsdlsd88                                                                                                                                                    |
+| • Detect Pwnagotchi 100% functional        |                                                                                                                                                                        |
+| • BLE/SwiftPair Spam now 100% functional   |                                                                                                                                                                        |
+| • Evil Portal storage adjustment           | Moves all portals into a folder instead of root of SD card                                                                                                            |
+| • External antenna information             | [Click here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/AntennaMod.md) for info on adding an external antenna.                  |
 
-- **RGB LED enabled thanks to [**lsdlsd88**](https://github.com/lsdlsd88)**
-- **Detect Pwnagotchi 100% functional**   
-- **BLE/SwiftPair Spam now 100% functional**
-- **<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal storage adjustment</a>** — Moves all portals into a folder instead of root of sd card.
-- **For info on adding an external antenna, click [here](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display/blob/master/AntennaMod.md).**
-
-
-<hr>
-
-## 📡 GPS Functionality 📡
-
-- **🛰 GPS is enabled on builds not labeled (NoGPS) in the flasher tool and it is fully operational through the 4-pin connector located near the MicroUSB port of the CYD module.**
-<br>
-Check <a href=https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification>HERE</a> for details on supported GPS hardware.
 
 <hr>
 
-## Device Compatibility
+> ## 📡 **GPS Functionality** 📡
+> 
+> - **GPS is enabled** on builds `13.10` & `1.0.0` (not labeled as "NoGPS" in the flasher tool).  
+>   It is fully operational via the 4-pin connector located near the MicroUSB port on the CYD module.  
+> 
+> - For build `1.1.0`, GPS is fully functional with **no conflicts** affecting LED or Pwnagotchi detection.  
+> 
+> 🔗 [Check here](https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification) for details on supported GPS hardware.
 
-Successfully tested on both of these devices:
-- [CYD variant 1](https://amazon.com/dp/B0BVFXR313)
-- [CYD variant 2](https://amazon.com/dp/B0CLR7MQ91)
+<hr>
 
-No hardware modifications required thanks to integration with **@ggaljoen's** [TFT_eSPI](https://github.com/ggaljoen/TFT_eSPI) fork.
+> ## 🛠️ **Device Compatibility**
+> 
+> Successfully tested on:
+> - [CYD variant 1](https://amazon.com/dp/B0BVFXR313)  
+> - [CYD variant 2](https://amazon.com/dp/B0CLR7MQ91)  
+> 
+> **✨ No hardware modifications required!**  
+> This is made possible thanks to seamless integration with **[@ggaljoen](https://github.com/ggaljoen)'s** [TFT_eSPI](https://github.com/ggaljoen/TFT_eSPI) fork.
 
 <hr>
 
@@ -65,41 +70,60 @@ No hardware modifications required thanks to integration with **@ggaljoen's** [T
   
 <hr>
 
-## Parts List
-1. CYD aka Cheap Yellow Display. (Can be found <a href=https://shorturl.at/GJKY4>HERE</a>)
-2. 1 rocker switch (Can be found <a href=https://shorturl.at/oABL4>HERE</a>) 19mm x 13mm
-3. 1 Voltmeter (Can be found <a href=https://shorturl.at/djHY5>HERE</a>)
-4. 1 Lipo battery (Can be found <a href=https://rb.gy/8q9c45>HERE</a>)
-5. x4 M3x20mm hex head screws. (Can be found <a href=https://rb.gy/lb1ewo>HERE</a>)
+> ## 🛠️ **Parts List**  
+> 
+> 1. **CYD aka Cheap Yellow Display**  
+>    *(Can be found [HERE](https://shorturl.at/GJKY4))*  
+> 2. **1 Rocker Switch** (19mm x 13mm)  
+>    *(Can be found [HERE](https://shorturl.at/oABL4))*  
+> 3. **1 Voltmeter**  
+>    *(Can be found [HERE](https://shorturl.at/djHY5))*  
+> 4. **1 Lipo Battery**  
+>    *(Can be found [HERE](https://rb.gy/8q9c45))*  
+> 5. **x4 M3x20mm Hex Head Screws**  
+>    *(Can be found [HERE](https://rb.gy/lb1ewo))*  
+> 
+> ---
+> 
+> ## 🧰 **Directions to Build the CM-Box**  
+> 
+> 1️⃣ Download and print the STL files located in the [3D files folder](https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files). All files are ready to print.  
+> 2️⃣ Consult the **Parts List** above.  
+> 3️⃣ **Build Process Coming Soon**  
+>     *(Pics are being taken of a new build for reference.)*  
+> 
+> ---
+> 
+> ## 💾 **SD Setup for CM-Box**  
+> 
+> If you flashed from the [Custom Marauder Flasher Tool for CYD](https://atomnft.github.io/CM-Box/flash0.html)  
+> or built from [CYD-ESP32Marauder](https://github.com/ATOMNFT/CYD-ESP32Marauder), you need to:  
+> - Create a folder on the root of your SD card titled `portals`.  
+> - Store the [Evil Portal HTML files](https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff), including the `index.html` file, in this folder.  
+> 
+> ---
+> 
+> ## 📸 **Pics of Build**  
+> 
+> Head over to the [3D files section](https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files) to download the STL files needed to print the CM-Box.  
+> *(The files are only for the 1 Micro USB version at this time.)*  
+> 
+> ![Front](Images/CMB1.jpg) ![Stand](Images/CMB2.jpg)  
+> ![Stand](Images/CMB3.jpg) ![Stand](Images/CMB4.jpg)  
+> 
+> ---
+> 
+> ## 🎉 **Shoutouts!** 📢  
+> 
+> A huge thank you goes to two wonderful people who made learning and building this possible:  
+> 
+> - **[Fr4nkFletcher](https://github.com/Fr4nkFletcher)** for all your guidance and late-night replies.  
+> - **[Smoochiee](https://github.com/smoochiee)** for helping with the bootscreen and the badass tutorials for building Marauder.  
+> 
+> Special thanks to the creators and supporters of the [ESP32 Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display) project and the community Discord, especially **@cod5fgzj** and [**ggaljoen**](https://github.com/ggaljoen).  
+> 
+> And of course, **[JustCallMeKoko](https://github.com/justcallmekoko)** for the foundational work on ESP32 Marauder.  
 
-
-
-<hr>
-  
-## Directions to build the CM-Box
- 1. Download and print the stl files located in <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> folder. All files are ready to print.
- 2. Consult parts list above^
- 3. Process coming soon. (Pics are being taken of a new build for ref.)
- 
- ## SD Setup for CM-Box
-If you flashed from the <a href=https://atomnft.github.io/CM-Box/flash0.html>Custom Marauder Flasher tool for CYD</a> or built from <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a> then You must create a folder on the root of your sd card titled "portals". This is where you will store the <a href=https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff>Evil Portal html files</a> along with the index.html file.
-  
- <hr>
-  
-## Pics of build
-  <b>Head over to the <a href=https://github.com/ATOMNFT/CM-Box/tree/main/STL%20Files>3D files</a> section to download the stl files need to print the CM-Box. The files are only for the 1 micro usb version at this time.</b>
-  
-  ![Front](Images/CMB1.jpg) ![Stand](Images/CMB2.jpg) ![Stand](Images/CMB3.jpg) ![Stand](Images/CMB4.jpg)
-  <br>
-  <hr>
-  
-## Shoutouts! 📢
-  <b>A huge thank you goes to two wonderful people. Whom without I would have not made it as far as I  did learning.</b> <br>
-  <b>Thanks to <a href=https://github.com/Fr4nkFletcher>Fr4nkFletcher</a> for all your guidance and late night replies.</b>
-  <b>And thank you to <a href=https://github.com/smoochiee>smoochiee</a> for helping with the bootscreen and the badass tuts for building our own Marauder.</b><br>
-  <b>A big thank you as well goes to the creators and supporters of the [ESP32 Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display) project and the community Discord, especially **@cod5fgzj**, [**ggaljoen**](https://github.com/ggaljoen). 
-  <br> 
-  And of course <a href=https://github.com/justcallmekoko>JustCallMeKoko</a>for the foundational work on ESP32 Marauder.</b>
   
   
   <br>

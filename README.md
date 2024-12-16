@@ -1,8 +1,11 @@
 ![Header](Images/cmheader.png)
 <br>
 
-<div align="center" style="overflow: visible;">
-  <img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg" width="100%">
+<div align="center" style="max-width: 100%; overflow: visible;">
+  <img 
+    src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg" 
+    style="width: 100%; height: auto; max-width: 800px;" 
+    alt="Responsive SVG">
 </div>
 
   

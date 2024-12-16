@@ -74,19 +74,16 @@
   
 <hr>
 
-> ## 🛠️ **Parts List**  
-> 
-> 1. **CYD aka Cheap Yellow Display**  
->    *(Can be found [HERE](https://shorturl.at/GJKY4))*  
-> 2. **1 Rocker Switch** (19mm x 13mm)  
->    *(Can be found [HERE](https://shorturl.at/oABL4))*  
-> 3. **1 Voltmeter**  
->    *(Can be found [HERE](https://shorturl.at/djHY5))*  
-> 4. **1 Lipo Battery**  
->    *(Can be found [HERE](https://rb.gy/8q9c45))*  
-> 5. **x4 M3x20mm Hex Head Screws**  
->    *(Can be found [HERE](https://rb.gy/lb1ewo))*  
-> 
+### 🛠️ **Parts List**
+
+| **Part**                      | **Description**                  | **Link**                            |
+|-------------------------------|----------------------------------|------------------------------------|
+| 🟡 **CYD (Cheap Yellow Display)** | Compact OLED display              | [Find it here](https://shorturl.at/GJKY4) |
+| 🔌 **Rocker Switch**          | 19mm x 13mm size                | [Find it here](https://shorturl.at/oABL4) |
+| 📟 **Voltmeter**              | Voltage display meter            | [Find it here](https://shorturl.at/djHY5) |
+| 🔋 **Lipo Battery**           | Rechargeable power source        | [Find it here](https://rb.gy/8q9c45)      |
+| 🔩 **M3x20mm Hex Head Screws** | Pack of 4 screws                 | [Find it here](https://rb.gy/lb1ewo)      |
+
 > ---
 > 
 > ## 🧰 **Directions to Build the CM-Box**  

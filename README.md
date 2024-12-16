@@ -1,9 +1,10 @@
 ![Header](Images/cmheader.png)
 <br>
 
-<div align="center">
-  <img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg">
-  </div>
+<div align="center" style="overflow: visible;">
+  <img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/Repolike.svg" width="100%">
+</div>
+
   
   ---
 

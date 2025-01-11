@@ -39,11 +39,9 @@
 <hr>
 
 > ## 📡 **GPS Functionality** 📡
-> 
-> - **GPS is enabled** on builds `13.10` & `1.0.0` (not labeled as "NoGPS" in the flasher tool).  
+>   
 >   It is fully operational via the 4-pin connector located near the MicroUSB port on the CYD module.  
 > 
-> - For build `1.1.0`, GPS is fully functional with **no conflicts**.  
 > 
 > 🔗 [Check here](https://github.com/justcallmekoko/ESP32Marauder/wiki/gps-modification) for details on supported GPS hardware.
 

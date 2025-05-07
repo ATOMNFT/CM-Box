@@ -10,8 +10,8 @@
 
   
   ---
-
-  <b>This repo will hold the flasher-tool to upload/flash a custom verion of <a href=hhttps://github.com/justcallmekoko/ESP32Marauder/wiki/about>Wifi Marauder</a> along with 3D files to print different cases for the CYD AKA Cheap Yellow Display. This build features a few great fixes and customzations.</b> 
+  <b>The flasher tool is now obsolete as JCMK has added support for the CYD into stock marauder now</b> 
+  <b>This repo will hold the 3D files to print different cases for the CYD AKA Cheap Yellow Display.</b> 
   
   <br>
   <br>
@@ -59,16 +59,8 @@
 <hr>
 
 ## To install this fork of marauder
- - **Simple Install:** <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD.
-
- - **Hands-On Install:** <b>Or you can choose to build from source (<a href=https://github.com/ATOMNFT/CYD-ESP32Marauder>CYD-ESP32Marauder</a>) for a more hands on experince. Both options result in the same installation the second option gives you the ability to modify the files further if your comfy with that.</b> 
-
-   <br>
- 
-   <a href="https://atomnft.github.io/CM-Box/flash0.html"><img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/esp-flash-icn.png" />CM-Box flasher tool</a>
-   <br>
-   <br>
-   <a href="https://github.com/ATOMNFT/CYD-ESP32Marauder"><img src="https://github.com/ATOMNFT/CM-Box/blob/main/Images/ide-icn.png" />Arduino Sketch Files</a>
+ - **Simple Install (Now obsolete):** <b>You can choose to use the CM-Box flasher tool to flash the latest version of CM-Box (Custom Marauder box) to your CYD.
+   <b>Flash or compile from JustCallMeKoko's links now</b>
   
 <hr>
 

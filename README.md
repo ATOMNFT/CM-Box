@@ -10,7 +10,8 @@
 
   
   ---
-  <b>The flasher tool is now obsolete as JCMK has added support for the CYD into stock marauder now</b> 
+  <b>The flasher tool is now obsolete as JCMK has added support for the CYD into stock marauder now.</b>
+  <br>  
   <b>This repo will hold the 3D files to print different cases for the CYD AKA Cheap Yellow Display.</b> 
   
   <br>

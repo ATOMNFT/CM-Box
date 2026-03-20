@@ -39,15 +39,7 @@
 >     *(Pics are being taken of a new build for reference.)*  
 > 
 > ---
-> 
-> ## 💾 **SD Setup for CM-Box**  
-> 
-> If you flashed from the [Custom Marauder Flasher Tool for CYD](https://atomnft.github.io/CM-Box/flash0.html)  
-> or built from [CYD-ESP32Marauder](https://github.com/ATOMNFT/CYD-ESP32Marauder), you need to:  
-> - Create a folder on the root of your SD card titled `portals`.  
-> - Store the [Evil Portal HTML files](https://github.com/ATOMNFT/CYD-ESP32Marauder/tree/master/Evil%20Portal%20Stuff), including the `index.html` file, in this folder.  
-> 
-> ---
+>
 > 
 > ## 📸 **Pics of Build**  
 > 

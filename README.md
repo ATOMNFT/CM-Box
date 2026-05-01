@@ -8,10 +8,7 @@
     alt="Responsive SVG">
 </div>
 
-  
-  ---
-  #The flasher tool is now obsolete as JCMK has added support for the CYD into stock marauder now.
-  
+
   <br>
   
   <b>This repo holds the 3D files to print different cases for the CYD AKA Cheap Yellow Display.</b> 
@@ -40,7 +37,7 @@
 > 
 > ---
 > 
-> [Custom Marauder Flasher Tool for CYD](https://atomnft.github.io/CM-Box/flash0.html)
+> [Custom v1.12.0 Marauder Flasher Tool for MicroUSB CYD](https://atomnft.github.io/CM-Box/flash0.html)
 > 
 > ---
 > 

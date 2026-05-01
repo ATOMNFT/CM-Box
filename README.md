@@ -11,7 +11,7 @@
 
   <br>
   
-  <b>This repo holds the 3D files to print different cases for the CYD AKA Cheap Yellow Display.</b> 
+  <b>This repo holds the 3D files to print different cases for the CYD AKA Cheap Yellow Display, and also a Web Flasher tool with v1.12.0</b> 
   
   <br>
   

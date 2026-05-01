@@ -1,134 +1,405 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>CYD ESP32Marauder Installer</title>
-  <img src="Images/flashlogo.png" alt="Logo" class="logo">
   <meta name="description" content="Easily allows users to install the ESP32-Marauder firmware on the Cheap-Yellow-Display." />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="color-scheme" content="dark light" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+
   <style>
+    :root {
+      --bg-1: #050814;
+      --bg-2: #09172a;
+      --cyan: #00f5ff;
+      --cyan-soft: rgba(0, 245, 255, 0.38);
+      --pink: #ff2bd6;
+      --pink-soft: rgba(255, 43, 214, 0.35);
+      --violet: #8b5cff;
+      --green: #39ff88;
+      --glass: rgba(9, 19, 38, 0.72);
+      --glass-light: rgba(255, 255, 255, 0.09);
+      --text: #f7fbff;
+      --muted: #b7c9dd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
     body {
       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
-      padding: 0;
+      color: var(--text);
+      line-height: 1.35;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255, 43, 214, 0.24), transparent 28%),
+        radial-gradient(circle at 85% 14%, rgba(0, 245, 255, 0.24), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(57, 255, 136, 0.12), transparent 30%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-2) 55%, #060914);
+      display: grid;
+      place-items: center;
+      padding: 12px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: radial-gradient(circle at center, black, transparent 78%);
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.025) 50%);
+      background-size: 100% 4px;
+      opacity: 0.35;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    a:hover {
+      color: var(--green);
+      text-shadow: 0 0 10px rgba(57, 255, 136, 0.9);
+    }
+
+    .page-shell {
+      width: min(960px, 100%);
+      height: min(720px, calc(100dvh - 24px));
+      display: grid;
+      place-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .glass-card {
+      width: min(760px, 100%);
+      max-height: 100%;
+      padding: clamp(16px, 2.8vw, 30px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 30px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.045)),
+        var(--glass);
+      box-shadow:
+        0 0 0 1px rgba(0, 245, 255, 0.16) inset,
+        0 0 34px var(--cyan-soft),
+        0 0 60px var(--pink-soft),
+        0 24px 70px rgba(0, 0, 0, 0.58);
+      backdrop-filter: blur(20px) saturate(150%);
+      -webkit-backdrop-filter: blur(20px) saturate(150%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.16), transparent),
+        radial-gradient(circle at 0% 0%, rgba(255, 43, 214, 0.22), transparent 34%),
+        radial-gradient(circle at 100% 8%, rgba(57, 255, 136, 0.16), transparent 30%);
+      opacity: 0.95;
+    }
+
+    .glass-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      width: min(330px, 70vw);
+      max-height: 120px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 8px;
+      filter: drop-shadow(0 0 22px rgba(0, 245, 255, 0.52));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 10px;
+      padding: 7px 13px;
+      border: 1px solid rgba(0, 245, 255, 0.28);
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(0, 0, 0, 0.22);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      box-shadow: 0 0 18px rgba(57, 255, 136, 0.16);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px var(--green);
+    }
+
+    .tagline {
+      max-width: 650px;
+      margin: 0 auto 13px;
+      color: #ff6ee7;
+      font-size: clamp(15px, 2.2vw, 20px);
+      font-weight: 800;
+      text-shadow: 0 0 18px rgba(255, 43, 214, 0.45);
+    }
+
+    .intro-panel {
+      max-width: 650px;
+      margin: 0 auto 14px;
+      padding: 14px 18px 14px 70px;
+      border: 1px solid rgba(0, 245, 255, 0.45);
+      border-radius: 20px;
+      background:
+        linear-gradient(135deg, rgba(0, 245, 255, 0.12), rgba(255, 43, 214, 0.08)),
+        rgba(255, 255, 255, 0.075);
+      background-image: url('Images/usb-plug.gif'), linear-gradient(135deg, rgba(0, 245, 255, 0.12), rgba(255, 43, 214, 0.08));
+      background-size: 52px auto, auto;
+      background-position: 12px center, center;
+      background-repeat: no-repeat;
+      box-shadow:
+        0 0 22px rgba(0, 245, 255, 0.18),
+        0 0 18px rgba(255, 43, 214, 0.12) inset;
+    }
+
+    .intro-title {
+      margin: 0 0 6px;
+      color: var(--cyan);
+      font-size: clamp(17px, 2.3vw, 22px);
+      font-weight: 900;
+      text-shadow: 0 0 16px rgba(0, 245, 255, 0.55);
+    }
+
+    .intro-text {
       margin: 0;
-      line-height: 1.4;
+      color: var(--text);
+      font-size: clamp(13px, 1.8vw, 15px);
     }
+
     fieldset {
-      margin: 20px;
-      padding: 14px;
-      border-radius: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      display: inline-block;
-      border: none;
+      max-width: 650px;
+      margin: 0 auto 12px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.075);
+      box-shadow:
+        0 0 22px rgba(139, 92, 255, 0.18),
+        0 0 16px rgba(0, 245, 255, 0.12) inset;
     }
+
     legend {
-      font-size: 28px;
-      font-weight: bold;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(2px);
-      border-radius: 20px;
-      padding: 10px 20px;
-      color: white;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 43, 214, 0.35);
+      border-radius: 999px;
+      color: #ffffff;
+      background: linear-gradient(90deg, rgba(255, 43, 214, 0.35), rgba(0, 245, 255, 0.22));
+      box-shadow: 0 0 18px rgba(255, 43, 214, 0.22);
+      font-size: clamp(15px, 2.2vw, 20px);
+      font-weight: 900;
     }
+
     select {
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      background-color: grey;
+      width: min(410px, 100%);
+      margin-top: 10px;
+      padding: 13px 16px;
+      border: 1px solid rgba(0, 245, 255, 0.42);
+      border-radius: 14px;
       color: white;
+      background: rgba(5, 10, 22, 0.86);
       font-size: 16px;
-      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+      font-weight: 700;
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+        0 0 20px rgba(0, 245, 255, 0.18);
+      cursor: pointer;
     }
+
     select:focus {
       outline: none;
-      box-shadow: 0 0 10px #00FFFF;
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(57, 255, 136, 0.18), 0 0 24px rgba(57, 255, 136, 0.22);
     }
+
+    .build-info {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .button-row {
+      min-height: 48px;
+      margin: 8px 0 0;
+    }
+
     .invisible {
       visibility: hidden;
     }
+
     .hidden {
       display: none;
     }
+
     esp-web-install-button[install-unsupported] {
       visibility: inherit;
     }
-    .logo {
-      max-width: 400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
     .footer {
-      color: #FFF;
-      margin-bottom: 0px;
-      margin-top: 8em;
-      border-top: 2px solid #FF1493;
-      padding-top: 30px;
+      margin-top: 11px;
+      padding-top: 11px;
+      border-top: 1px solid rgba(255, 43, 214, 0.48);
+      color: var(--muted);
       display: flex;
       justify-content: center;
-      flex-direction: column;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      font-size: 13px;
     }
-    .wrapper {
-      display: flex;
-      justify-content: center;
+
+    #visitor-counter {
+      width: 100%;
+      margin: 2px 0 0;
+      color: rgba(247, 251, 255, 0.7);
+      font-size: 12px;
     }
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #333;
-        color: #fff;
+
+    @media (max-height: 680px) {
+      .logo {
+        max-height: 86px;
+        margin-bottom: 4px;
       }
-      a {
-        color: #00FFFF;
+
+      .tagline {
+        margin-bottom: 9px;
+      }
+
+      .intro-panel {
+        margin-bottom: 10px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+      }
+
+      fieldset {
+        padding: 12px;
+        margin-bottom: 8px;
+      }
+
+      .footer {
+        margin-top: 7px;
+        padding-top: 7px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        padding: 8px;
+      }
+
+      .page-shell {
+        height: calc(100dvh - 16px);
+      }
+
+      .glass-card {
+        border-radius: 24px;
+        padding: 14px;
+      }
+
+      .intro-panel {
+        padding: 64px 13px 13px;
+        background-size: 46px auto, auto;
+        background-position: center 12px, center;
+      }
+
+      .footer {
+        font-size: 12px;
       }
     }
   </style>
+
   <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
 </head>
+
 <body>
-  <center>
-    <p class="wrapper" align="center">
-      <span style="font-size: 20px; color: #FF1493;">
+  <main class="page-shell">
+    <section class="glass-card" aria-label="CYD ESP32Marauder installer">
+      <img src="Images/flashlogo.png" alt="Logo" class="logo">
+
+      <p class="eyebrow">ESP32 Web Flash Utility</p>
+
+      <p class="tagline">
         This utility is designed to flash the ESP32-Marauder onto a CYD (Cheap Yellow Display).
-      </span>
-    </p>
-
-    <div style="text-align: center; margin: 20px auto; max-width: 600px; padding: 15px; border: 2px solid #00FFFF; border-radius: 15px; background-color: rgba(255, 255, 255, 0.1); box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3); background-image: url('Images/usb-plug.gif'); background-size: 12% auto; background-position: left 0% top -2px; background-repeat: no-repeat;">
-      <p style="color: #00FFFF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">
-        The CM-Box Web Flasher
       </p>
 
-      <p style="color: #FFF; font-size: 16px; margin: 0;">
-        Your gateway to effortlessly installing ESP32-Marauder firmware. Designed with a sleek web interface, it transforms
-        firmware flashing into a fast, hassle-free experience, empowering your devices for cutting-edge network security
-        and testing adventures.
+      <div class="intro-panel">
+        <p class="intro-title">The CM-Box Web Flasher</p>
+
+        <p class="intro-text">
+          Your gateway to effortlessly installing ESP32-Marauder firmware. Designed with a sleek web interface, it transforms
+          firmware flashing into a fast, hassle-free experience, empowering your devices for cutting-edge network security
+          and testing adventures.
+        </p>
+      </div>
+
+      <fieldset>
+        <legend>1.12.0 Marauder - Choose Your Device:</legend>
+
+        <select id="select-1.12.0" aria-label="Choose your CYD device build">
+          <option value="" selected disabled>Choose a device</option>
+          <option value="cyd_microusb_1.12.0">1.12.0 CYD Micro-USB only</option>
+          <option value="cyd_2usb_1.12.0">1.12.0 CYD with 2 USB</option>
+        </select>
+
+        <p class="build-info">
+          <strong>
+            For more build info, visit
+            <a href="https://github.com/justcallmekoko/ESP32Marauder/releases">HERE</a>.
+          </strong>
+        </p>
+      </fieldset>
+
+      <p class="button-row">
+        <esp-web-install-button class="invisible"></esp-web-install-button>
       </p>
-    </div>
 
-    <fieldset>
-      <legend>1.12.0 Marauder - Choose Your Device:</legend>
-
-      <select id="select-1.12.0">
-        <option value="" selected disabled>Choose a device</option>
-        <option value="cyd_microusb_1.12.0">1.12.0 CYD Micro-USB only</option>
-        <option value="cyd_2usb_1.12.0">1.12.0 CYD with 2 USB</option>
-      </select>
-
-      <p style="color: white; font-size: 18px; margin-top: 10px;">
-        <strong>
-          For more build info, visit
-          <a href="https://github.com/justcallmekoko/ESP32Marauder/releases" style="color: lightblue;">HERE</a>.
-        </strong>
-      </p>
-    </fieldset>
-
-    <p class="button-row" align="center">
-      <esp-web-install-button class="invisible"></esp-web-install-button>
-    </p>
-  </center>
+      <div class="footer">
+        ✨ <a href="https://github.com/ATOMNFT/CM-Box">CM-Box</a> &mdash;
+        Installer powered by &mdash;
+        <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a> 🛠️
+        <p id="visitor-counter"></p>
+      </div>
+    </section>
+  </main>
 
   <script>
     // Set the ESP Web Tools manifest based on selected device
@@ -151,13 +422,5 @@
       }
     });
   </script>
-
-  <div class="footer">
-    ✨ <a href="https://github.com/ATOMNFT/CM-Box" style="color:#00FFFF;">CM-Box</a> &mdash;
-    Installer powered by &mdash;
-    <a href="https://esphome.github.io/esp-web-tools/" style="color:#00FFFF;">ESP Web Tools</a> 🛠️
-
-    <p id="visitor-counter"></p>
-  </div>
 </body>
 </html>
